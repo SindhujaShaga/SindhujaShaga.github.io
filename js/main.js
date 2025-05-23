@@ -793,7 +793,7 @@ setTimeout(() => {
 // Preloader text handling
 
 new Typewriter(".loading-text", {
-  strings: ["Welcome to my portfolio — where ideas meet execution","almost there"]
+  strings: ["Welcome to my portfolio — where ideas meet execution"]
   autoStart: true,
   delay: 50,
   cursor: "|",
