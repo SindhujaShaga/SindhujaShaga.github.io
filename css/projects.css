@@ -146,7 +146,7 @@
 .project-card .content::-webkit-scrollbar {
   position: absolute;
   width: 2px;
-  background: #6e6e6e50;
+  background: #FFFFFF;
   transition: border-radius 1s;
 }
 .project-card .content:w .truncated::after {
