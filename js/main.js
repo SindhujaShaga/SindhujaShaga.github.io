@@ -782,6 +782,7 @@ setTimeout(() => {
       "DevOps Engineer",
       "Software Analyst",
       "Full-Stack Developer",
+      "Pet Lover"
     ],
     autoStart: true,
     loop: true,
