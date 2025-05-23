@@ -17,7 +17,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  color: #FFFFFF;
+  color: #6e6e6e;
   min-width: 320px;
   scrollbar-gutter: auto;
 }
@@ -34,7 +34,7 @@ body {
 ::-webkit-scrollbar {
   position: absolute;
   width: 8px;
-  background: #FFFFFF;
+  background: #6e6e6e;
   transition: border-radius 1s;
   margin-top: 40px;
 }
@@ -49,7 +49,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #ffffff00;
+  background-color: #6e6e6e00;
 }
 
 /* SVG Animation */
@@ -95,7 +95,7 @@ a:hover {
 }
 
 nav .cv-download {
-  color: #ffffff;
+  color: #6e6e6e;
   border: none;
   background-color: #68d372;
   padding: 15px 20px;
@@ -252,7 +252,7 @@ h6 {
   border-radius: 2px;
   height: 4px;
   width: 25px;
-  background: #ffffff;
+  background: #6e6e6e;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -390,7 +390,7 @@ h6 {
 }
 
 .typing-text {
-  color: #ffffff;
+  color: #6e6e6e;
   position: relative;
   display: inline;
 }
@@ -462,7 +462,7 @@ h6 {
 .intro-p-url {
   text-decoration: underline;
   display: inline-block !important;
-  color: #FFFFFF;
+  color: #6e6e6e;
 }
 
 .intro-p-url:hover {
@@ -498,7 +498,7 @@ h6 {
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  color: #FFFFFF;
+  color: #6e6e6e;
   font-weight: 600;
   margin: 10px auto;
   margin-bottom: 25px;
@@ -662,7 +662,7 @@ h6 {
   opacity: 0%;
   font-size: 15px;
   z-index: 2;
-  color: #ffffff;
+  color: #6e6e6e;
   backdrop-filter: blur(2px);
   padding-top: 25px;
   padding-bottom: 25px;
@@ -676,7 +676,7 @@ h6 {
 #skills .container .div-card span {
   position: relative;
   display: table;
-  color: #FFFFFF;
+  color: #6e6e6e;
   font-size: 15px;
   margin-top: 90px;
   margin-left: auto;
@@ -863,7 +863,7 @@ h6 {
 }
 
 .timeline-content .description {
-  color: #FFFFFF;
+  color: #6e6e6e;
 }
 
 .timeline-content .globe::before {
@@ -884,7 +884,7 @@ h6 {
 
 .timeline-content .date {
   font-size: 12px;
-  color: #FFFFFF;
+  color: #6e6e6e;
   font-weight: 600;
   margin-bottom: 10px;
   letter-spacing: 2px;
@@ -924,7 +924,7 @@ h6 {
 }
 
 .btn-send-message {
-  color: #ffffff;
+  color: #6e6e6e;
   background-color: #68d372;
   pointer-events: auto !important;
   padding: 8px 20px;
@@ -941,7 +941,7 @@ h6 {
   background-color: transparent;
   border-radius: 0px;
   border: 0px;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #6e6e6e;
 }
 
 .contact-bg {
@@ -1041,7 +1041,7 @@ h6 {
 }
 
 .swal-modal {
-  background-color: #ffffffde;
+  background-color: #6e6e6ede;
   backdrop-filter: blur(2px);
 }
 
@@ -1057,7 +1057,7 @@ h6 {
 .swal-icon--success::before,
 .swal-icon--success::after,
 .swal-icon--success__hide-corners {
-  background-color: #ffffff00;
+  background-color: #6e6e6e00;
 }
 
 .swal-button {
@@ -1087,7 +1087,7 @@ footer ul {
 footer ul li,
 .footer-nav ul li a,
 footer .support ul li a {
-  color: #FFFFFF;
+  color: #6e6e6e;
 }
 
 footer ul li:hover,
@@ -1498,7 +1498,7 @@ footer .support ul li a:hover {
 
   .timeline-content .date {
     position: absolute;
-    color: #FFFFFF;
+    color: #6e6e6e;
     top: -30px;
     left: 0px;
   }
