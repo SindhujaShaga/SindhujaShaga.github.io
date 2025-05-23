@@ -17,7 +17,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  color: #6e6e6e;
+  color: #FFFFFF;
   min-width: 320px;
   scrollbar-gutter: auto;
 }
@@ -34,7 +34,7 @@ body {
 ::-webkit-scrollbar {
   position: absolute;
   width: 8px;
-  background: #6e6e6e;
+  background: #FFFFFF;
   transition: border-radius 1s;
   margin-top: 40px;
 }
@@ -462,7 +462,7 @@ h6 {
 .intro-p-url {
   text-decoration: underline;
   display: inline-block !important;
-  color: #6e6e6e;
+  color: #FFFFFF;
 }
 
 .intro-p-url:hover {
@@ -498,7 +498,7 @@ h6 {
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  color: #6e6e6e;
+  color: #FFFFFF;
   font-weight: 600;
   margin: 10px auto;
   margin-bottom: 25px;
@@ -676,7 +676,7 @@ h6 {
 #skills .container .div-card span {
   position: relative;
   display: table;
-  color: #6e6e6e;
+  color: #FFFFFF;
   font-size: 15px;
   margin-top: 90px;
   margin-left: auto;
@@ -863,7 +863,7 @@ h6 {
 }
 
 .timeline-content .description {
-  color: #6e6e6e;
+  color: #FFFFFF;
 }
 
 .timeline-content .globe::before {
@@ -884,7 +884,7 @@ h6 {
 
 .timeline-content .date {
   font-size: 12px;
-  color: #6e6e6e;
+  color: #FFFFFF;
   font-weight: 600;
   margin-bottom: 10px;
   letter-spacing: 2px;
@@ -941,7 +941,7 @@ h6 {
   background-color: transparent;
   border-radius: 0px;
   border: 0px;
-  border-bottom: 1px solid #6e6e6e;
+  border-bottom: 1px solid #FFFFFF;
 }
 
 .contact-bg {
@@ -1087,7 +1087,7 @@ footer ul {
 footer ul li,
 .footer-nav ul li a,
 footer .support ul li a {
-  color: #6e6e6e;
+  color: #FFFFFF;
 }
 
 footer ul li:hover,
@@ -1498,7 +1498,7 @@ footer .support ul li a:hover {
 
   .timeline-content .date {
     position: absolute;
-    color: #6e6e6e;
+    color: #FFFFFF;
     top: -30px;
     left: 0px;
   }
