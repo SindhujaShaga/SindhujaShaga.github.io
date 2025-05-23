@@ -40,7 +40,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #68d372;
+  background: #466fec;
   border-radius: 4px;
 }
 
@@ -91,13 +91,13 @@ a {
 }
 
 a:hover {
-  color: #68d372;
+  color: #;
 }
 
 nav .cv-download {
   color: #ffffff;
   border: none;
-  background-color: #68d372;
+  background-color: #466fec;
   padding: 15px 20px;
   /* padding: 15px auto; */
 }
@@ -152,7 +152,7 @@ h6 {
 }
 
 .green {
-  color: #68d372;
+  color: #466fec;
   font-size: 30px;
   font-weight: 900;
 }
@@ -174,7 +174,7 @@ h6 {
 .navbar .nav-brand {
   position: absolute;
   top: 0;
-  background-color: #68d372;
+  background-color: #466fec;
   display: inline-block;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -201,18 +201,18 @@ h6 {
 }
 
 .navbar li .nav-link:hover {
-  color: #68d372;
+  color: #466fec;
 }
 
 .navbar li .active {
-  color: #68d372;
+  color: #466fec;
 }
 
 .navbar .button {
   position: relative;
   float: right;
   color: white;
-  background-color: #68d372;
+  background-color: #466fec;
   width: max-content;
   cursor: pointer;
 }
@@ -271,7 +271,7 @@ h6 {
 
 #nav-icon span:nth-child(2) {
   top: 10px;
-  background-color: #68d372;
+  background-color: #466fec;
 }
 
 #nav-icon span:nth-child(3) {
@@ -334,7 +334,7 @@ h6 {
 
 #progress-bar {
   height: 5px;
-  background-color: #68d372;
+  background-color: #466fec;
   width: 0%;
 }
 
@@ -346,8 +346,8 @@ h6 {
   font-size: 20px;
   font-family: "Koulen";
   letter-spacing: 1px;
-  color: #68d372 !important;
-  border: 2px solid #68d372;
+  color: #466fec !important;
+  border: 2px solid #466fec;
   border-radius: 20px;
   box-shadow: 10px 10px 30px #1d1d1d50, -10px -10px 30px #27272750;
 }
@@ -376,7 +376,7 @@ h6 {
 }
 
 .section-title {
-  color: #68d372;
+  color: #466fec;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
@@ -414,7 +414,7 @@ h6 {
 }
 
 #intro-p:hover {
-  color: #68d372;
+  color: #466fec;
   display: inline-block;
   animation: rubberBand;
   animation-duration: 1s;
@@ -437,14 +437,14 @@ h6 {
 }
 
 .btn-contact {
-  background-color: #68d37200 !important;
-  border: 2px solid #68d372;
+  background-color: #466fec00 !important;
+  border: 2px solid #466fec;
   transition: background-color 0.2s ease-in-out;
   cursor: pointer;
 }
 
 .btn-contact:hover {
-  background-color: #68d372 !important;
+  background-color: #466fec !important;
 }
 
 .intro-btns {
@@ -467,7 +467,7 @@ h6 {
 
 .intro-p-url:hover {
   cursor: pointer;
-  color: #68d372 !important;
+  color: #466fec !important;
   text-decoration: underline;
   animation: rubberBand;
   animation-duration: 1s;
@@ -505,7 +505,7 @@ h6 {
 }
 
 #intro .scroll:hover {
-  color: #68d372;
+  color: #466fec;
   transition: color 0.5s ease-in-out;
   animation: flash;
   animation-duration: 1s;
@@ -588,7 +588,7 @@ h6 {
   width: 100%;
   cursor: grab;
   margin-bottom: 25px;
-  border-left: 5px solid #68d372;
+  border-left: 5px solid #466fec;
   border-radius: 8px;
 }
 
@@ -653,7 +653,7 @@ h6 {
 }
 
 #skills .container .div-card-item:hover #skills .container .div-card span {
-  color: #68d372;
+  color: #466fec;
 }
 
 #skills .container .div-card .skill-level {
@@ -786,7 +786,7 @@ h6 {
 .timeline ul li {
   padding: 10px;
   background-color: #222222;
-  border: 2px solid #68d372;
+  border: 2px solid #466fec;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
   text-align: left;
   color: white;
@@ -811,7 +811,7 @@ h6 {
   position: relative;
   color: #222222;
   margin-right: 5px;
-  -webkit-text-stroke: 1px #68d372;
+  -webkit-text-stroke: 1px #466fec;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
 }
@@ -821,7 +821,7 @@ h6 {
   position: relative;
   color: #222222;
   margin-right: 5px;
-  -webkit-text-stroke: 1px #68d372;
+  -webkit-text-stroke: 1px #466fec;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
 }
@@ -830,7 +830,7 @@ h6 {
   content: "\e56b";
   position: relative;
   color: #222222;
-  -webkit-text-stroke: 1px #68d372;
+  -webkit-text-stroke: 1px #466fec;
   margin-right: 5px;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
@@ -841,7 +841,7 @@ h6 {
   position: relative;
   color: #222222;
   margin-right: 5px;
-  -webkit-text-stroke: 1px #68d372;
+  -webkit-text-stroke: 1px #466fec;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
 }
@@ -850,7 +850,7 @@ h6 {
   content: "\f1ad";
   position: relative;
   color: #222222;
-  -webkit-text-stroke: 1px #68d372;
+  -webkit-text-stroke: 1px #466fec;
   margin-right: 5px;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
@@ -871,7 +871,7 @@ h6 {
   content: "\f57e";
   position: relative;
   color: #222222;
-  -webkit-text-stroke: 1px #68d372;
+  -webkit-text-stroke: 1px #466fec;
   margin-right: 5px;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
@@ -894,8 +894,8 @@ h6 {
 .timeline-content .date::before {
   content: "\f783";
   position: relative;
-  color: #68d37250;
-  -webkit-text-stroke: 1px #68d372;
+  color: #466fec50;
+  -webkit-text-stroke: 1px #466fec;
   margin-right: 5px;
   font-family: "Font Awesome 5 Free";
   font-weight: 800;
@@ -926,7 +926,7 @@ h6 {
 
 .btn-send-message {
   color: #ffffff;
-  background-color: #68d372;
+  background-color: #466fec;
   pointer-events: auto !important;
   padding: 8px 20px;
   cursor: pointer !important;
@@ -1036,8 +1036,8 @@ h6 {
 
 #intro .button {
   color: white;
-  background-color: #68d372;
-  border: 2px solid #68d372;
+  background-color: #466fec;
+  border: 2px solid #466fec;
   padding: 8px 20px;
 }
 
@@ -1047,12 +1047,12 @@ h6 {
 }
 
 .swal-icon--success__ring {
-  border: 4px solid #68d372;
+  border: 4px solid #466fec;
 }
 
 .swal-icon--success__line--long,
 .swal-icon--success__line--tip {
-  background-color: #68d372;
+  background-color: #466fec;
 }
 
 .swal-icon--success::before,
@@ -1064,12 +1064,12 @@ h6 {
 .swal-button {
   padding: 8px;
   width: 80px;
-  background-color: #68d372;
+  background-color: #466fec;
 }
 
 .swal-button:hover,
 .swal-button:active {
-  background-color: #68d372 !important;
+  background-color: #466fec !important;
 }
 
 footer {
@@ -1187,9 +1187,9 @@ footer .support ul li a:hover {
 }
 
 .footer-rights .copyright p a:hover {
-  color: #68d372;
+  color: #466fec;
   text-decoration-line: underline;
-  text-decoration-color: #68d372;
+  text-decoration-color: #466fec;
   text-decoration-style: wavy;
 }
 
@@ -1224,7 +1224,7 @@ footer .support ul li a:hover {
 }
 
 .to-top i {
-  color: #68d372;
+  color: #466fec;
 }
 
 @media (max-width: 400px) {
@@ -1303,7 +1303,7 @@ footer .support ul li a:hover {
     width: 2px;
     height: 120px;
     display: block;
-    background-color: #68d372;
+    background-color: #466fec;
     position: absolute;
     top: 0;
     left: 50%;
@@ -1365,7 +1365,7 @@ footer .support ul li a:hover {
     width: 2px;
     height: 100px;
     display: block;
-    background-color: #68d372;
+    background-color: #466fec;
     position: absolute;
     top: 150px;
     left: 0;
@@ -1425,7 +1425,7 @@ footer .support ul li a:hover {
     transform: translateX(-50%);
     width: 2px;
     height: 104%;
-    background-color: #68d372;
+    background-color: #466fec;
   }
 
   .timeline ul li {
@@ -1457,7 +1457,7 @@ footer .support ul li a:hover {
     width: 20px;
     margin: 0px 10px;
     border-radius: 50%;
-    border: 2px solid #68d372;
+    border: 2px solid #466fec;
     background-color: #222222;
     top: 0px;
     transition: background-color 0.4s;
@@ -1470,8 +1470,8 @@ footer .support ul li a:hover {
     width: 20px;
     margin: 0px 10px;
     border-radius: 50%;
-    border: 2px solid #68d372;
-    background-color: #68d372;
+    border: 2px solid #466fec;
+    background-color: #466fec;
     bottom: -20px;
     right: -40px;
     transition: background-color 0.4s;
@@ -1509,13 +1509,13 @@ footer .support ul li a:hover {
   }
 
   .timeline ul li:hover::before {
-    background-color: #68d372;
+    background-color: #466fec;
     scale: 120%;
   }
 
   .timeline ul .start:not(:hover)::after {
     pointer-events: none;
-    background-color: #68d372;
+    background-color: #466fec;
   }
 
   #contact {
@@ -1622,7 +1622,7 @@ footer .support ul li a:hover {
   .navbar .nav-brand {
     position: relative;
     top: -10px;
-    background-color: #68d372;
+    background-color: #466fec;
     display: inline-block;
     padding: 20px 10px 0px 10px;
     font-size: 2em;
@@ -1639,11 +1639,11 @@ footer .support ul li a:hover {
   }
 
   .navbar li .nav-link:hover {
-    color: #68d372 !important;
+    color: #466fec !important;
   }
 
   .js-scroll-trigger:hover {
-    background-color: #68d37210 !important;
+    background-color: #466fec10 !important;
     border-radius: 4px;
   }
 
@@ -1661,7 +1661,7 @@ footer .support ul li a:hover {
   }
 
   .navbar li .active {
-    color: #68d372;
+    color: #466fec;
   }
 
   .navbar .navbar-toggler {
@@ -1715,7 +1715,7 @@ footer .support ul li a:hover {
   }
 
   .btn-contact:hover {
-    background-color: #68d37200 !important;
+    background-color: #466fec00 !important;
   }
 
   .contact-btn {
@@ -1727,7 +1727,7 @@ footer .support ul li a:hover {
     content: "";
     left: -1.5px !important;
     top: -1px !important;
-    background: #68d372;
+    background: #466fec;
     transition-duration: 0.3s;
     z-index: -1;
     inset: 0px auto auto 0px;
@@ -1743,7 +1743,7 @@ footer .support ul li a:hover {
   }
 
   .hb-fill-right-bg:hover {
-    background: #68d372;
+    background: #466fec;
     transition: all 0.3s ease 0s;
   }
 
@@ -1752,7 +1752,7 @@ footer .support ul li a:hover {
     width: 122px;
     height: 2px;
     display: block;
-    background-color: #68d372;
+    background-color: #466fec;
     position: absolute;
     top: 115px;
     left: -140px;
@@ -1798,7 +1798,7 @@ footer .support ul li a:hover {
     width: 2px;
     height: 100px;
     display: block;
-    background-color: #68d372;
+    background-color: #466fec;
     position: absolute;
     top: 150px;
     left: -50px !important;
@@ -1951,7 +1951,7 @@ footer .support ul li a:hover {
   }
 
   .green {
-    color: #68d372;
+    color: #466fec;
     font-size: 3rem;
     font-weight: 900;
   }
@@ -2017,6 +2017,6 @@ footer .support ul li a:hover {
   }
 
   .to-top i {
-    color: #68d372;
+    color: #466fec;
   }
 }
