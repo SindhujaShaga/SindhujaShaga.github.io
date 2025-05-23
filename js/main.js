@@ -779,10 +779,9 @@ function progressIndicator() {
 setTimeout(() => {
   new Typewriter(".typing-text", {
     strings: [
+      "DevOps Engineer",
+      "Software Analyst",
       "Full-Stack Developer",
-      "DevOps Enthusiast",
-      "UI/UX Designer",
-      "Photographer",
     ],
     autoStart: true,
     loop: true,
@@ -794,7 +793,7 @@ setTimeout(() => {
 // Preloader text handling
 
 new Typewriter(".loading-text", {
-  strings: ["Lakshan Is Thinking..."],
+  strings: ["Welcome to my portfolio — where ideas meet execution","almost there"]
   autoStart: true,
   delay: 50,
   cursor: "|",
