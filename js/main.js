@@ -100,7 +100,7 @@ $(document).ready(function () {
       $logo
         .attr('src', originalSrc)
         .removeClass('clicked');
-    }, 1000);
+    }, 3000);
   }
 
   // Wire it up
