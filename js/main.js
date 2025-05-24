@@ -1,98 +1,72 @@
-// Nav Button
-
 $(document).ready(function () {
+  // — Nav Button toggles —
   $("#nav-icon").click(function () {
     $(this).toggleClass("open");
   });
-});
 
-$(document).ready(function () {
   $(".js-scroll-trigger").click(function () {
     $("#nav-icon").toggleClass("open");
   });
-});
 
-//Scroll To Sections
+  // — Scroll-to helpers —
+  function toAbout() {
+    var element = document.getElementById("about");
+    var headerOffset = 85;
+    var elementPosition = element.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+  }
+  function toProjects() {
+    var element = document.getElementById("projects");
+    var headerOffset = 85;
+    var elementPosition = element.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+  }
+  function toSkills() {
+    var element = document.getElementById("skills");
+    var headerOffset = 85;
+    var elementPosition = element.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+  }
+  function toMilestones() {
+    var element = document.getElementById("milestones");
+    var headerOffset = 85;
+    var elementPosition = element.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+  }
+  function toContact() {
+    var element = document.getElementById("contact");
+    var headerOffset = 85;
+    var elementPosition = element.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+  }
 
-function toAbout() {
-  var element = document.getElementById("about");
-  var headerOffset = 85;
-  var elementPosition = element.getBoundingClientRect().top;
-  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+  // — Logo-swap setup —
+  var $logo       = $('#nav-logo');
+  var originalSrc = $logo.attr('src');
+  var altSrc      = $logo.data('alt-src');
 
-  window.scrollTo({
-    top: offsetPosition,
-    behavior: "smooth",
-  });
-}
+  // — Named swap function —
+  function swapLogo() {
+    $logo
+      .attr('src', altSrc)
+      .addClass('clicked');
 
-function toProjects() {
-  var element = document.getElementById("projects");
-  var headerOffset = 85;
-  var elementPosition = element.getBoundingClientRect().top;
-  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-  window.scrollTo({
-    top: offsetPosition,
-    behavior: "smooth",
-  });
-}
-
-function toSkills() {
-  var element = document.getElementById("skills");
-  var headerOffset = 85;
-  var elementPosition = element.getBoundingClientRect().top;
-  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-  window.scrollTo({
-    top: offsetPosition,
-    behavior: "smooth",
-  });
-}
-
-function toMilestones() {
-  var element = document.getElementById("milestones");
-  var headerOffset = 85;
-  var elementPosition = element.getBoundingClientRect().top;
-  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-  window.scrollTo({
-    top: offsetPosition,
-    behavior: "smooth",
-  });
-}
-
-function toContact() {
-  var element = document.getElementById("contact");
-  var headerOffset = 85;
-  var elementPosition = element.getBoundingClientRect().top;
-  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-  window.scrollTo({
-    top: offsetPosition,
-    behavior: "smooth",
-  });
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  const logo = document.getElementById('nav-logo');
-  const originalSrc = logo.src;                // e.g. "Home-Icon.webp"
-  const altSrc      = logo.dataset.altSrc;     // e.g. "Home-Icon2.webp"
-
-  logo.addEventListener('click', function() {
-    // 1) Swap to the alternate image
-    logo.src = altSrc;
-
-    // 2) Add the “pressed” class
-    logo.classList.add('clicked');
-
-    // 3) After 1 second, swap back and remove the class
     setTimeout(function() {
-      logo.src = originalSrc;
-      logo.classList.remove('clicked');
+      $logo
+        .attr('src', originalSrc)
+        .removeClass('clicked');
     }, 1000);
-  });
+  }
+
+  // — Wire it up —
+  $logo.on('click', swapLogo);
 });
+
 
 
 //Scrolling Progress Bar
