@@ -73,18 +73,6 @@ function toContact() {
     behavior: "smooth",
   });
 }
-
- // jQuery initialization and event handlers
-$(document).ready(function () {
-  // Nav Button toggles
-  $("#nav-icon").click(function () {
-    $(this).toggleClass("open");
-  });
-
-  $(".js-scroll-trigger").click(function () {
-    $("#nav-icon").toggleClass("open");
-  });
-
 // Logo-swap setup
 var $logo = $('#nav-logo');
 var originalSrc = $logo.attr('src');
@@ -114,6 +102,7 @@ function revertLogo() {
 // Wire up hover events
 $logo.on('mouseenter', swapLogoOnHover);
 $logo.on('mouseleave', revertLogo);
+
 
 //Scrolling Progress Bar
 
