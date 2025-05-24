@@ -74,12 +74,23 @@ function toContact() {
   });
 }
 
-  // — Logo-swap setup —
+  // jQuery initialization and event handlers
+$(document).ready(function () {
+  // Nav Button toggles
+  $("#nav-icon").click(function () {
+    $(this).toggleClass("open");
+  });
+
+  $(".js-scroll-trigger").click(function () {
+    $("#nav-icon").toggleClass("open");
+  });
+
+  // Logo-swap setup
   var $logo       = $('#nav-logo');
   var originalSrc = $logo.attr('src');
   var altSrc      = $logo.data('alt-src');
 
-  // — Named swap function —
+  // Named swap function
   function swapLogo() {
     $logo
       .attr('src', altSrc)
@@ -92,10 +103,9 @@ function toContact() {
     }, 1000);
   }
 
-  // — Wire it up —
+  // Wire it up
   $logo.on('click', swapLogo);
 });
-
 
 
 //Scrolling Progress Bar
