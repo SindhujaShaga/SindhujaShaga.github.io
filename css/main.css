@@ -406,7 +406,7 @@ h6 {
 }
 
 .nav-logo.clicked {
-  transform: scale(0.3);
+  transform: scale(0.9);
 }
 
 .typing {
