@@ -97,12 +97,14 @@ $(document).ready(function () {
       .addClass('clicked');
 
     setTimeout(function() {
-      $logo
-       // .attr('src', originalSrc)
-        .removeClass('clicked');
+      $logo.removeClass('clicked');
+    }, 100);
+
+    // 3) after 3000ms (3s), revert back to the original image
+    setTimeout(function() {
+      $logo.attr('src', originalSrc);
     }, 3000);
   }
-
   // Wire it up
   $logo.on('click', swapLogo);
 });
