@@ -97,9 +97,6 @@ function toContact() {
   });
 });
 
-  // wire it up
-  $logo.on('click', swapLogo);
-});
 
 //Scrolling Progress Bar
 
