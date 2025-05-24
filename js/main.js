@@ -74,6 +74,29 @@ function toContact() {
   });
 }
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const logo = document.getElementById('nav-logo');
+  const originalSrc = logo.src;                // e.g. "Home-Icon.webp"
+  const altSrc      = logo.dataset.altSrc;     // e.g. "Home-Icon2.webp"
+
+  logo.addEventListener('click', function() {
+    // 1) Swap to the alternate image
+    logo.src = altSrc;
+
+    // 2) Add the “pressed” class
+    logo.classList.add('clicked');
+
+    // 3) After 1 second, swap back and remove the class
+    setTimeout(function() {
+      logo.src = originalSrc;
+      logo.classList.remove('clicked');
+    }, 1000);
+  });
+});
+</script>
+
+
 //Scrolling Progress Bar
 
 window.onscroll = function () {
