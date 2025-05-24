@@ -402,11 +402,11 @@ h6 {
   width: auto;
   vertical-align: middle;
   cursor: pointer;
-  transition: transform 0.6s ease;
+  transition: transform 0.1s ease;
 }
 
 .nav-logo.clicked {
-  transform: scale(0.5);
+  transform: scale(0.3);
 }
 
 .typing {
