@@ -85,36 +85,40 @@ $(document).ready(function () {
     $("#nav-icon").toggleClass("open");
   });
 
-// Logo-swap setup
-var $logo       = $('#nav-logo');
-var originalSrc = $logo.attr('src');
-var altSrc      = $logo.attr('data-alt-src'); // Fixed: should be data-alt-src
-var hoverTimeout;
+$(document).ready(function() {
+  // Logo-swap setup
+  var $logo = $('#nav-logo');
+  var originalSrc = $logo.attr('src');
+  var altSrc = $logo.attr('data-alt-src');
+  var hoverTimeout;
 
-// Named swap function for hover
-function swapLogoOnHover() {
-  // Clear any existing timeout
-  clearTimeout(hoverTimeout);
-  
-  $logo
-    .attr('src', altSrc)
-    .addClass('hovered');
-}
+  console.log('Original src:', originalSrc);
+  console.log('Alt src:', altSrc);
 
-// Function to revert logo
-function revertLogo() {
-  $logo.removeClass('hovered');
-  
-  // Set timeout to revert image after 3 seconds
-  hoverTimeout = setTimeout(function() {
-    $logo.attr('src', originalSrc);
-  }, 3000);
-}
+  // Named swap function for hover
+  function swapLogoOnHover() {
+    // Clear any existing timeout
+    clearTimeout(hoverTimeout);
+    
+    $logo
+      .attr('src', altSrc)
+      .addClass('hovered');
+  }
 
-// Wire up hover events
-$logo.on('mouseenter', swapLogoOnHover);
-$logo.on('mouseleave', revertLogo);
+  // Function to revert logo
+  function revertLogo() {
+    $logo.removeClass('hovered');
+    
+    // Set timeout to revert image after 3 seconds
+    hoverTimeout = setTimeout(function() {
+      $logo.attr('src', originalSrc);
+    }, 3000);
+  }
 
+  // Wire up hover events
+  $logo.on('mouseenter', swapLogoOnHover);
+  $logo.on('mouseleave', revertLogo);
+});
 
 //Scrolling Progress Bar
 
