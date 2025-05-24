@@ -95,7 +95,7 @@ function toContact() {
   $logo.on('mouseleave', function() {
     $(this).attr('src', originalSrc);
   });
-});
+
 
 
 //Scrolling Progress Bar
