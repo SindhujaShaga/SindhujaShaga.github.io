@@ -1630,7 +1630,7 @@ footer .support ul li a:hover {
   .navbar .nav-brand {
     position: relative;
     top: -10px;
-    background-color: #466fec;
+    background-color: transparent;
     display: inline-block;
     padding: 20px 10px 0px 10px;
     font-size: 2em;
