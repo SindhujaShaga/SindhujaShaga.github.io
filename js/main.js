@@ -96,7 +96,7 @@ function revertLogo() {
   // Set timeout to revert image after 3 seconds
   hoverTimeout = setTimeout(function() {
     $logo.attr('src', originalSrc);
-  }, 3000);
+  }, 100);
 }
 
 // Wire up hover events
