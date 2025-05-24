@@ -74,7 +74,6 @@ function toContact() {
   });
 }
 
-<script>
 document.addEventListener('DOMContentLoaded', function() {
   const logo = document.getElementById('nav-logo');
   const originalSrc = logo.src;                // e.g. "Home-Icon.webp"
@@ -94,7 +93,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1000);
   });
 });
-</script>
 
 
 //Scrolling Progress Bar
