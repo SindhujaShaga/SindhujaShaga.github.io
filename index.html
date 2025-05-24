@@ -129,25 +129,23 @@
   <body id="to-top" class="noselect">
     <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <button
-      id="home-btn"
-      class="nav-brand noselect p-0 border-0 bg-transparent"
-      onclick="
-        const img = this.querySelector('img');
-        const next = img.dataset.activeSrc;
-        img.dataset.activeSrc = img.src;
-        img.src = next;
-      "
-    >
+    <a href="index.html">
       <img
         src="img/icon/Home-Icon.webp"
-        alt="Home"
+        alt="Logo"
         class="nav-logo"
-        data-active-src="img/icon/Home-Icon2.webp"
+        data-alt="img/icon/Home-Icon2.webp"
+        onclick="
+          const img = this;
+          const next = img.getAttribute('data-alt');
+          img.setAttribute('data-alt', img.src);
+          img.src = next;
+        "
       />
-    </button>
+    </a>
   </div>
 </nav>
+
 
         <button class="navbar-toggler" type="button">
           <div
