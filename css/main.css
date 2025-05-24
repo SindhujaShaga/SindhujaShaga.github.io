@@ -395,6 +395,14 @@ h6 {
   display: inline;
 }
 
+.nav-logo {
+  position: relative;
+  left: 8px; 
+  height: 4rem;
+  width: auto;
+  vertical-align: middle;
+}
+
 .typing {
   position: relative;
   width: 100%;
