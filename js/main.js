@@ -85,28 +85,18 @@ $(document).ready(function () {
     $("#nav-icon").toggleClass("open");
   });
 
-  // Logo-swap setup
+    // Logo hover-swap setup
   var $logo       = $('#nav-logo');
   var originalSrc = $logo.attr('src');
-  var altSrc      = $logo.attr('data-alt-src');
+  var altSrc      = $logo.data('alt-src');
 
-  // Named swap function
-  function swapLogo() {
-    $logo
-      .attr('src', altSrc)
-      .addClass('clicked');
-
-    setTimeout(function() {
-      $logo.removeClass('clicked');
-    }, 100);
-
-    // 3) after 3000ms (3s), revert back to the original image
-    setTimeout(function() {
-      $logo.attr('src', originalSrc);
-    }, 3000);
-  }
-  // Wire it up
-  $logo.on('click', swapLogo);
+  $logo
+    .on('mouseenter', function() {
+      $(this).attr('src', altSrc);
+    })
+    .on('mouseleave', function() {
+      $(this).attr('src', originalSrc);
+    });
 });
 
 
