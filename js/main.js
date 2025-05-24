@@ -101,7 +101,6 @@ $(document).ready(function () {
         .attr('src', originalSrc)
         .removeClass('clicked');
     }, 3000);
-    }, 4000);
   }
 // Wire it up
   $logo.on('click', swapLogo);
