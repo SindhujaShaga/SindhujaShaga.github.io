@@ -74,27 +74,29 @@ function toContact() {
   });
 }
 
- $(document).ready(function() {
-  // Cache logo and its two sources
+ // Logo-swap setup
   var $logo       = $('#nav-logo');
   var originalSrc = $logo.attr('src');
-  var altSrc      = $logo.data('alt-src'); // reads data-alt-src
+  var altSrc      = $logo.attr('data-alt-src');
 
-  // Nav-icon toggle handlers
-  $('#nav-icon').click(function() {
-    $(this).toggleClass('open');
-  });
-  $('.js-scroll-trigger').click(function() {
-    $('#nav-icon').toggleClass('open');
-  });
+  // Named swap function
+  function swapLogo() {
+    $logo
+      .attr('src', altSrc)
+      .addClass('clicked');
 
-  // Logo hover swap
-  $logo.on('mouseenter', function() {
-    $(this).attr('src', altSrc);
-  });
-  $logo.on('mouseleave', function() {
-    $(this).attr('src', originalSrc);
-  });
+    setTimeout(function() {
+      $logo.removeClass('clicked');
+    }, 100);
+
+    // 3) after 3000ms (3s), revert back to the original image
+    setTimeout(function() {
+      $logo.attr('src', originalSrc);
+    }, 3000);
+  }
+  // Wire it up
+  $logo.on('click', swapLogo);
+});
 
 
 
