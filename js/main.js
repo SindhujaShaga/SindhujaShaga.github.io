@@ -88,7 +88,7 @@ $(document).ready(function () {
   // Logo-swap setup
   var $logo       = $('#nav-logo');
   var originalSrc = $logo.attr('src');
-  var altSrc      = $logo.data('alt-src');
+  var altSrc      = $logo.attr('alt-src');
 
   // Named swap function
   function swapLogo() {
@@ -98,9 +98,9 @@ $(document).ready(function () {
 
     setTimeout(function() {
       $logo
-        .attr('src', originalSrc)
+       // .attr('src', originalSrc)
         .removeClass('clicked');
-    }, 4000);
+    }, 100);
   }
 
   // Wire it up
