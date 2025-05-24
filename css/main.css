@@ -401,6 +401,12 @@ h6 {
   height: 4rem;
   width: auto;
   vertical-align: middle;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.nav-logo.hovered {
+  transform: scale(0.9);
 }
 
 .typing {

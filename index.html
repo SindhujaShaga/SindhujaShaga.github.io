@@ -128,29 +128,16 @@
   </head>
   <body id="to-top" class="noselect">
     <nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <button id="homeBtn" class="nav-btn">
-      <img
-        id="homeIcon"
-        src="img/icon/Home-Icon.webp"
-        data-alt-src="img/icon/Home-Icon-Clicked.webp"
-        alt="Home Icon"
-        class="nav-logo"
-      />
-    </button>
-  </div>
-</nav>
-
-<script>
-  document.getElementById('homeBtn').addEventListener('click', function() {
-    const img = document.getElementById('homeIcon');
-    // swap src and data-alt-src
-    const current = img.getAttribute('src');
-    img.setAttribute('src', img.getAttribute('data-alt-src'));
-    img.setAttribute('data-alt-src', current);
-  });
-</script>
-
+      <div class="container">
+        <a href="index.html" class="nav-logo-link">
+          <img
+            id="nav-logo"
+            class="nav-logo"
+            src="img/icon/Home-Icon2.webp"
+            data-alt-src="img/icon/Home-Icon.webp"
+            alt="Home"
+          />
+        </a>
 
         <button class="navbar-toggler" type="button">
           <div

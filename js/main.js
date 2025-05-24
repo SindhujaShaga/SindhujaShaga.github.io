@@ -73,6 +73,36 @@ function toContact() {
     behavior: "smooth",
   });
 }
+// Logo-swap setup
+var $logo = $('#nav-logo');
+var originalSrc = $logo.attr('src');
+var altSrc = $logo.attr('data-alt-src');
+var hoverTimeout;
+
+// Named swap function for hover
+function swapLogoOnHover() {
+  // Clear any existing timeout
+  clearTimeout(hoverTimeout);
+  
+  $logo
+    .attr('src', altSrc)
+    .addClass('hovered');
+}
+
+// Function to revert logo
+function revertLogo() {
+  $logo.removeClass('hovered');
+  
+  // Set timeout to revert image after 3 seconds
+  hoverTimeout = setTimeout(function() {
+    $logo.attr('src', originalSrc);
+  }, 50);
+}
+
+// Wire up hover events
+$logo.on('mouseenter', swapLogoOnHover);
+$logo.on('mouseleave', revertLogo);
+
 
 //Scrolling Progress Bar
 
