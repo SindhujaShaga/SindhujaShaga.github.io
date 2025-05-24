@@ -1,49 +1,78 @@
+// Nav Button
+
 $(document).ready(function () {
-  // — Nav Button toggles —
   $("#nav-icon").click(function () {
     $(this).toggleClass("open");
   });
+});
 
+$(document).ready(function () {
   $(".js-scroll-trigger").click(function () {
     $("#nav-icon").toggleClass("open");
   });
+});
 
-  // — Scroll-to helpers —
-  function toAbout() {
-    var element = document.getElementById("about");
-    var headerOffset = 85;
-    var elementPosition = element.getBoundingClientRect().top;
-    var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-    window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-  }
-  function toProjects() {
-    var element = document.getElementById("projects");
-    var headerOffset = 85;
-    var elementPosition = element.getBoundingClientRect().top;
-    var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-    window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-  }
-  function toSkills() {
-    var element = document.getElementById("skills");
-    var headerOffset = 85;
-    var elementPosition = element.getBoundingClientRect().top;
-    var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-    window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-  }
-  function toMilestones() {
-    var element = document.getElementById("milestones");
-    var headerOffset = 85;
-    var elementPosition = element.getBoundingClientRect().top;
-    var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-    window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-  }
-  function toContact() {
-    var element = document.getElementById("contact");
-    var headerOffset = 85;
-    var elementPosition = element.getBoundingClientRect().top;
-    var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-    window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-  }
+//Scroll To Sections
+
+function toAbout() {
+  var element = document.getElementById("about");
+  var headerOffset = 85;
+  var elementPosition = element.getBoundingClientRect().top;
+  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
+}
+
+function toProjects() {
+  var element = document.getElementById("projects");
+  var headerOffset = 85;
+  var elementPosition = element.getBoundingClientRect().top;
+  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
+}
+
+function toSkills() {
+  var element = document.getElementById("skills");
+  var headerOffset = 85;
+  var elementPosition = element.getBoundingClientRect().top;
+  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
+}
+
+function toMilestones() {
+  var element = document.getElementById("milestones");
+  var headerOffset = 85;
+  var elementPosition = element.getBoundingClientRect().top;
+  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
+}
+
+function toContact() {
+  var element = document.getElementById("contact");
+  var headerOffset = 85;
+  var elementPosition = element.getBoundingClientRect().top;
+  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
+}
 
   // — Logo-swap setup —
   var $logo       = $('#nav-logo');
