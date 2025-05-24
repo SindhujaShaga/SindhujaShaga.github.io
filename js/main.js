@@ -85,20 +85,24 @@ $(document).ready(function () {
     $("#nav-icon").toggleClass("open");
   });
 
-    // Logo hover-swap setup
-  var $logo       = $('#nav-logo');
-  var originalSrc = $logo.attr('src');
-  var altSrc      = $logo.data('alt-src');
+    $logo
+      .attr('src', altSrc)
+      .addClass('clicked');
 
-  $logo
-    .on('mouseenter', function() {
-      $(this).attr('src', altSrc);
-    })
-    .on('mouseleave', function() {
-      $(this).attr('src', originalSrc);
-    });
+    // 3) remove the scale class after 100ms
+    setTimeout(function() {
+      $logo.removeClass('clicked');
+    }, 100);
+
+    // 4) revert to the original image after 3000ms
+    setTimeout(function() {
+      $logo.attr('src', originalSrc);
+    }, 3000);
+  }
+
+  // wire it up
+  $logo.on('click', swapLogo);
 });
-
 
 //Scrolling Progress Bar
 
