@@ -74,31 +74,28 @@ function toContact() {
   });
 }
 
-  // jQuery initialization and event handlers
-$(document).ready(function () {
-  // Nav Button toggles
-  $("#nav-icon").click(function () {
-    $(this).toggleClass("open");
+ $(document).ready(function() {
+  // Cache logo and its two sources
+  var $logo       = $('#nav-logo');
+  var originalSrc = $logo.attr('src');
+  var altSrc      = $logo.data('alt-src'); // reads data-alt-src
+
+  // Nav-icon toggle handlers
+  $('#nav-icon').click(function() {
+    $(this).toggleClass('open');
+  });
+  $('.js-scroll-trigger').click(function() {
+    $('#nav-icon').toggleClass('open');
   });
 
-  $(".js-scroll-trigger").click(function () {
-    $("#nav-icon").toggleClass("open");
+  // Logo hover swap
+  $logo.on('mouseenter', function() {
+    $(this).attr('src', altSrc);
   });
-
-    $logo
-      .attr('src', altSrc)
-      .addClass('clicked');
-
-    // 3) remove the scale class after 100ms
-    setTimeout(function() {
-      $logo.removeClass('clicked');
-    }, 100);
-
-    // 4) revert to the original image after 3000ms
-    setTimeout(function() {
-      $logo.attr('src', originalSrc);
-    }, 3000);
-  }
+  $logo.on('mouseleave', function() {
+    $(this).attr('src', originalSrc);
+  });
+});
 
   // wire it up
   $logo.on('click', swapLogo);
